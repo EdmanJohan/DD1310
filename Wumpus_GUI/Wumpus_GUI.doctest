@@ -1,0 +1,30 @@
+>>> import main
+>>> import objects
+>>> import settings
+
+# Testing if values are imported correctly
+>>> testGame = Game()
+>>> testGame.screen
+<Surface(1024x512x32 SW)>
+
+# Background should be same as Surface
+>>> testGame.background
+<Surface(1024x512x32 SW)>
+
+# Testing if difficulty has been initialized and if can be changed.
+>>> testGame.difficulty
+2
+
+>>> testGame.change_difficulty(1)
+>>> testGame.difficulty
+3
+
+# Testing if changes are applied
+>>> testGame.difficulty_modifier()
+>>> testGame.bats, testGame.pits
+(4, 5)
+
+
+>>> testGame.change_difficulty(-1)
+>>> testGame.difficulty
+2
