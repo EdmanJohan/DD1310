@@ -15,5 +15,5 @@ Both versions require at least:
 For additional instructions for the different versions, see links below.
 
 ### Versions - 2016/12/07
-* [CLI - Version]()
-* [GUI - Version]()
+* [CLI - Version](./readme-GUI.md)
+* [GUI - Version](./readme-CLI.md)
