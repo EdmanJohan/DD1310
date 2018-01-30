@@ -3,6 +3,13 @@ P-Uppgift 154 - Wumpus (Version 1.0.1)
 
 A Wumpus clone made for the personal project in the programming course DD1310 @ KTH.
 
+```
+Your task is to navigate the dark culverts below the CSC school at KTH and kill Wumpus.
+But culverts are riddled with dangers and the path may prove difficult.
+```
+
+Both versions feature a difficulty that can be changed and a list with top scores.
+
 ### Getting started
 
 There are different prerequisites depending on which version you should choose to run,
