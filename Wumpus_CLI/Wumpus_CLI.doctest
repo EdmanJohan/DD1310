@@ -1,0 +1,121 @@
+>>> from main import *
+>>> from objects import *
+>>> from modules import *
+
+#################
+## TESTING CSC ##
+#################
+
+Initializing Object and testing properties
+>>> testCSC = CSC()
+>>> testCSC.difficulty
+3
+
+Testing different properties.
+>>> testCSC.culverts[0]
+[Culvert 1 - Neighbors:[2, 6, 5] Wumpus:False Danger:EMPTY]
+>>> testCSC.culverts[0].wumpus = True
+>>> testCSC.culverts[0]
+[Culvert 1 - Neighbors:[2, 6, 5] Wumpus:True Danger:EMPTY]
+>>> testCSC.culverts[0].bats = True
+>>> testCSC.culverts[0]
+[Culvert 1 - Neighbors:[2, 6, 5] Wumpus:True Danger:BATS]
+
+This should not work, since a bat is already assigned.
+>>> testCSC.culverts[0].pit = True
+>>> testCSC.culverts[0]
+[Culvert 1 - Neighbors:[2, 6, 5] Wumpus:True Danger:BATS]
+
+Places player in a empty culvert
+>>> testCSC._player_pos = testCSC.place_entity("PLAYER")
+
+Wumpus is placed at player location
+>>> testCSC._player_pos.wumpus = True
+>>> testCSC.check_move() #doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+objects.PlayerDead
+
+>>> testCSC.player_pos.wumpus = False
+>>> prev_pos = testCSC._player_pos
+>>> testCSC.player_pos.bats = True
+>>> testCSC.check_move() #doctest: +ELLIPSIS
+<BLANKLINE>
+Du stöter på fladdermöss, snälla som de är
+tar de tag i dig och efter en kort flygtur
+släpper de ned dig i rum...
+
+>>> testCSC._player_pos != prev_pos
+False
+
+Expecting
+>>> testCSC.escape()
+False
+
+Testing if we can change difficulty
+>>> testCSC._difficulty = 5
+>>> testCSC._difficulty
+5
+
+#####################
+##TESTING HIGHSCORE##
+#####################
+
+# Creating a test Highscore
+>>> testHighScore = HighScore()
+
+# Testing if we can increase player score
+>>> testHighScore.player_score_incr()
+
+>>> testHighScore.player_score
+1
+
+# Testing if we can add score entries
+>>> testHighScore.highscore = []
+>>> testHighScore.highscore.append(Score('Johan', 15))
+>>> testHighScore.highscore[0].name + " " + str(testHighScore.highscore[0].score)
+'Johan 15'
+
+>>> testHighScore.highscore.append(Score('Johan', 5))
+>>> testHighScore.highscore[1].name + " " + str(testHighScore.highscore[1].score)
+'Johan 5'
+
+# Testing if sorting works
+>>> testHighScore.sort()
+>>> testHighScore.highscore[0].name + " " + str(testHighScore.highscore[0].score)
+'Johan 5'
+
+###################
+##TESTING MODULES##
+###################
+
+
+Testing a valid request
+>>> output('Doctest', 'Test')
+This is just an debugging entry.
+
+Testing an invalid request. We expect KeyError.
+>>> output('Doctest', 'Welcome') #doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+KeyError: 'Welcome'
+
+# Testing general cases
+>>> is_numerical("sdfb")
+False
+>>> is_numerical(5)
+(True, 5)
+>>> is_numerical(-9879879876546549679871)
+(True, -9879879876546549679871)
+
+# Testing for accepted parameters
+>>> within_range(5, 0, 10)
+(True, 5)
+>>> within_range(151, 0, 10)
+False
+
+#Testing for unaccepted parameters, will fail.
+>>> within_range(b, 10, 0) #doctest: +ELLIPSIS
+Traceback (most recent call last):
+...
+NameError: name 'b' is not defined
