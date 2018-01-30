@@ -5,9 +5,9 @@
 #================#
 
 CONTENTS
-1. [Requirements](#Requirements)
-2. [How to run](#How-to-run)
-3. [How to play](#How-to-play)
+1. [Requirements](#1-Requirements)
+2. [How to run](#2-how-to-run)
+3. [How to play](#3-How-to-play)
 
 #================#
 
