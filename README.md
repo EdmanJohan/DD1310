@@ -11,6 +11,9 @@ either the CLI (Command-Line-Interface) or the GUI (Graphical) one.
 Both versions require at least:
 - Python 3.5.2
 
+### Some Screenshots
+Can be found [here](./assets/readme.md)
+
 
 For additional instructions for the different versions, see links below.
 
