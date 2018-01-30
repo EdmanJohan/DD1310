@@ -15,5 +15,8 @@ Both versions require at least:
 For additional instructions for the different versions, see links below.
 
 ### Versions - 2016/12/07
-* [CLI - Version](./readme-GUI.md)
-* [GUI - Version](./readme-CLI.md)
+* [CLI - Version](./Wumpus_GUI/README.md)
+* [GUI - Version](./Wumpus_CLI/README.md)
+
+### Download
+You can download the files [here](https://codeload.github.com/FromWolves/DD1310/zip/master?token=AVfDSwk35l7k6bQI1-i05ZXsEkbi5S8Gks5acI9qwA==).
