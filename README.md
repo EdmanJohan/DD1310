@@ -1,5 +1,5 @@
 ## Wumpus | P-Uppgift DD1310
-P-Uppgift 154 - Wumpus (Version 1.0.1)
+P-Uppgift 154 - Wumpus
 
 A Wumpus clone made for the personal project in the programming course DD1310 @ KTH.
 
