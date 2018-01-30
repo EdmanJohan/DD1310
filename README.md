@@ -20,7 +20,7 @@ Both versions require at least:
 
 For additional instructions for the different versions, see links below.
 
-### Versions - 2016/12/07
+### 1.0 - 2016/12/07
 * [CLI - Version](./Wumpus_GUI/README.md)
 * [GUI - Version](./Wumpus_CLI/README.md)
 
