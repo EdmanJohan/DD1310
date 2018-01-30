@@ -29,4 +29,4 @@ You can download the files [here](https://codeload.github.com/FromWolves/DD1310/
 
 
 ### Some Screenshots
-Can be found [here](./assets/readme.md)
+Can be found [here](.(/assets/README.md)
