@@ -11,10 +11,6 @@ either the CLI (Command-Line-Interface) or the GUI (Graphical) one.
 Both versions require at least:
 - Python 3.5.2
 
-### Some Screenshots
-Can be found [here](./assets/readme.md)
-
-
 For additional instructions for the different versions, see links below.
 
 ### Versions - 2016/12/07
@@ -23,3 +19,7 @@ For additional instructions for the different versions, see links below.
 
 ### Download
 You can download the files [here](https://codeload.github.com/FromWolves/DD1310/zip/master?token=AVfDSwk35l7k6bQI1-i05ZXsEkbi5S8Gks5acI9qwA==).
+
+
+### Some Screenshots
+Can be found [here](./assets/readme.md)
